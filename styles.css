@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007BFF;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    font-size: 24px;
+}
+
+.destination {
+    text-align: center;
+    margin: 50px 0;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.destination:hover {
+    transform: scale(1.05);
+}
+
+.destination img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.destination img:hover {
+    transform: scale(1.1);
+}
+
+.about, .contact {
+    text-align: center;
+    padding: 50px;
+    background: #f8f9fa;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
